@@ -16,9 +16,9 @@ import static io.restassured.RestAssured.*;
 
 public class Utils {
 
-    public static RequestSpecification req;
+    public RequestSpecification req;
 
-    public static RequestSpecification requestSpecification() {
+    public RequestSpecification requestSpecification() {
 
 
         if (req == null) {
@@ -39,7 +39,7 @@ public class Utils {
     }
 
 
-    public static String getJsonPath(Response response, String key){
+    public String getJsonPath(Response response, String key){
         String resp = response.asString();
         JsonPath js = new JsonPath(resp);
         return js.get(key).toString();

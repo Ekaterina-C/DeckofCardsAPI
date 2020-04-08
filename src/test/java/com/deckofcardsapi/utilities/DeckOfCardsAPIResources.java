@@ -10,7 +10,7 @@ public enum DeckOfCardsAPIResources {
     reshuffleCards("/api/deck/<<deck_id>>/shuffle/"),
 
     // Draw a Card:
-    drawCard("/api/deck/draw"),
+    drawCard("/api/deck/"),
 
     // A Brand New Deck:
     createNewDeck("/api/deck/new/"),
