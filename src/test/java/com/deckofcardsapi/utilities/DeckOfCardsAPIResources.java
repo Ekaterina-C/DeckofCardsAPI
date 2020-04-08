@@ -2,29 +2,23 @@ package com.deckofcardsapi.utilities;
 
 public enum DeckOfCardsAPIResources {
 
+
+    // Shuffle the Cards:
     shuffleCardsAPI("/api/deck/new/shuffle"),
+
+    // Reshuffle the Cards:
     reshuffleCards("/api/deck/<<deck_id>>/shuffle/"),
+
+    // Draw a Card:
     drawCard("/api/deck/draw"),
+
+    // A Brand New Deck:
     createNewDeck("/api/deck/new/"),
+
+    //Create new deck and draw card
     createNewDeckAndDrawCard("/api/deck/new/draw/");
 
 
-//    Shuffle the Cards
-//    https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1
-//
-//    Draw a Card:
-//    https://deckofcardsapi.com/api/deck/<<deck_id>>/draw/?count=2
-//
-//    replace <<deck_id>> with "new" to create a shuffled deck and draw cards from that deck in the same request.
-    /*
-    Reshuffle the Cards:
-    https://deckofcardsapi.com/api/deck/<<deck_id>>/shuffle/
-
-    A Brand New Deck:
-    https://deckofcardsapi.com/api/deck/new/
-
-    NEW (Oct 2019): Add jokers_enabled=true as a GET or POST parameter to your request to include two Jokers in the deck.
-     */
 
 
     private String resource;
