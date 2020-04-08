@@ -12,15 +12,16 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 import org.apache.log4j.Logger;
+
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
 
-public class CreateNewDeckStepDef extends Utils{
+public class CreateNewDeckStepDef extends Utils {
     RequestSpecification res;
     Response response;
     ResponseSpecification resSpec;
     static String cardCount;
-     static Logger log = Logger.getLogger(CreateNewDeckStepDef.class);
+    static Logger log = Logger.getLogger(CreateNewDeckStepDef.class);
 
     @Given("user wants to execute {string} service")
     public void user_wants_to_execute_service(String service) {
@@ -58,11 +59,10 @@ public class CreateNewDeckStepDef extends Utils{
     }
 
     @Then("number of cards in deck is {int}")
-    public void number_of_cards_in_deck_is(Integer int1) {
+    public void number_of_cards_in_deck_is(Integer count) {
         cardCount = getJsonPath(response, "remaining");
-        assertEquals("Actual card count doesn't match expected card count", "54", cardCount);
+        assertEquals("Actual card count doesn't match expected card count", count, Integer.valueOf(cardCount));
     }
-
 
 
 }

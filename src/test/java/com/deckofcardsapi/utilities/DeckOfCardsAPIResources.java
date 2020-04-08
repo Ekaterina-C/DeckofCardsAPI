@@ -3,6 +3,7 @@ package com.deckofcardsapi.utilities;
 public enum DeckOfCardsAPIResources {
 
 
+
     // Shuffle the Cards:
     shuffleCardsAPI("/api/deck/new/shuffle"),
 

@@ -17,7 +17,7 @@ import static io.restassured.RestAssured.*;
 public class Utils {
 
     public RequestSpecification req;
-
+    public Response resp;
     public RequestSpecification requestSpecification() {
 
 
@@ -43,6 +43,11 @@ public class Utils {
         String resp = response.asString();
         JsonPath js = new JsonPath(resp);
         return js.get(key).toString();
+    }
 
+    public Response newDeckCreation(){
+        DeckOfCardsAPIResources resourceAPI = DeckOfCardsAPIResources.valueOf("createNewDeck");
+        resp = given().spec(requestSpecification()).when().get(resourceAPI.getResource());
+        return resp;
     }
 }

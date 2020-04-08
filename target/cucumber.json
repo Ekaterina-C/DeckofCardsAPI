@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-04-08T20:42:12.084Z",
+        "start_timestamp": "2020-04-08T22:06:26.332Z",
         "line": 6,
         "name": "Verify if deck is being successfully created using createNewDeckAPI",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 18949100,
+              "duration": 11968300,
               "status": "passed"
             },
             "line": 7,
@@ -31,7 +31,7 @@
           },
           {
             "result": {
-              "duration": 1869939000,
+              "duration": 1321695800,
               "status": "passed"
             },
             "line": 8,
@@ -53,14 +53,15 @@
           },
           {
             "result": {
+              "duration": 998700,
               "status": "passed"
             },
             "line": 9,
-            "name": "the API call is success with status code 200",
+            "name": "the API call is success with status code 209",
             "match": {
               "arguments": [
                 {
-                  "val": "200",
+                  "val": "209",
                   "offset": 41
                 }
               ],
@@ -71,15 +72,12 @@
         ],
         "tags": [
           {
-            "name": "@wip"
-          },
-          {
             "name": "@CreateDeck"
           }
         ]
       },
       {
-        "start_timestamp": "2020-04-08T20:42:14.045Z",
+        "start_timestamp": "2020-04-08T22:06:27.718Z",
         "line": 13,
         "name": "Verify if deck with Jokers is being successfully created",
         "description": "",
@@ -89,7 +87,6 @@
         "steps": [
           {
             "result": {
-              "duration": 15621800,
               "status": "passed"
             },
             "line": 14,
@@ -107,7 +104,7 @@
           },
           {
             "result": {
-              "duration": 191037500,
+              "duration": 255430500,
               "status": "passed"
             },
             "line": 15,
@@ -129,7 +126,6 @@
           },
           {
             "result": {
-              "duration": 996900,
               "status": "passed"
             },
             "line": 16,
@@ -147,7 +143,7 @@
           },
           {
             "result": {
-              "duration": 298202500,
+              "duration": 186710300,
               "status": "passed"
             },
             "line": 17,
@@ -166,9 +162,6 @@
         ],
         "tags": [
           {
-            "name": "@wip"
-          },
-          {
             "name": "@CreateDeckWithJokers"
           }
         ]
@@ -179,15 +172,1062 @@
     "id": "creating-new-deck",
     "keyword": "Feature",
     "uri": "file:src/test/resources/com/deckofcardsapi/features/create_new_deck.feature",
-    "tags": [
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
       {
-        "name": "@wip",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
+        "start_timestamp": "2020-04-08T22:06:28.168Z",
+        "line": 11,
+        "name": "Verify if cards are being successfully drawn from the deck",
+        "description": "",
+        "id": "draw-cards-from-deck;verify-if-cards-are-being-successfully-drawn-from-the-deck;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 349200900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user creates a new deck",
+            "match": {
+              "location": "com.deckofcardsapi.step_defenitions.DrawCardsStepDefinition.user_creates_a_new_deck()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 242546100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user calls \"drawCard\" with \"Get\" http request with specific \"1\" of cards in deck",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"drawCard\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Get\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"1\"",
+                  "offset": 60
+                }
+              ],
+              "location": "com.deckofcardsapi.step_defenitions.DrawCardsStepDefinition.user_calls_with_http_request_with_specific_of_cards_in_deck(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7021800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "remaining number of cards in response body is \"1\" number of cards less",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 46
+                }
+              ],
+              "location": "com.deckofcardsapi.step_defenitions.DrawCardsStepDefinition.remaining_number_of_cards_in_response_body_is_number_of_cards_less(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DrawCards"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-04-08T22:06:28.777Z",
+        "line": 12,
+        "name": "Verify if cards are being successfully drawn from the deck",
+        "description": "",
+        "id": "draw-cards-from-deck;verify-if-cards-are-being-successfully-drawn-from-the-deck;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 245547200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user creates a new deck",
+            "match": {
+              "location": "com.deckofcardsapi.step_defenitions.DrawCardsStepDefinition.user_creates_a_new_deck()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 223621300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user calls \"drawCard\" with \"Get\" http request with specific \"2\" of cards in deck",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"drawCard\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Get\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"2\"",
+                  "offset": 60
+                }
+              ],
+              "location": "com.deckofcardsapi.step_defenitions.DrawCardsStepDefinition.user_calls_with_http_request_with_specific_of_cards_in_deck(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5988800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "remaining number of cards in response body is \"2\" number of cards less",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2\"",
+                  "offset": 46
+                }
+              ],
+              "location": "com.deckofcardsapi.step_defenitions.DrawCardsStepDefinition.remaining_number_of_cards_in_response_body_is_number_of_cards_less(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DrawCards"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-04-08T22:06:29.254Z",
+        "line": 13,
+        "name": "Verify if cards are being successfully drawn from the deck",
+        "description": "",
+        "id": "draw-cards-from-deck;verify-if-cards-are-being-successfully-drawn-from-the-deck;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 229419500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user creates a new deck",
+            "match": {
+              "location": "com.deckofcardsapi.step_defenitions.DrawCardsStepDefinition.user_creates_a_new_deck()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 203079200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user calls \"drawCard\" with \"Get\" http request with specific \"10\" of cards in deck",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"drawCard\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Get\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"10\"",
+                  "offset": 60
+                }
+              ],
+              "location": "com.deckofcardsapi.step_defenitions.DrawCardsStepDefinition.user_calls_with_http_request_with_specific_of_cards_in_deck(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 15575600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "remaining number of cards in response body is \"10\" number of cards less",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10\"",
+                  "offset": 46
+                }
+              ],
+              "location": "com.deckofcardsapi.step_defenitions.DrawCardsStepDefinition.remaining_number_of_cards_in_response_body_is_number_of_cards_less(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DrawCards"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-04-08T22:06:29.702Z",
+        "line": 14,
+        "name": "Verify if cards are being successfully drawn from the deck",
+        "description": "",
+        "id": "draw-cards-from-deck;verify-if-cards-are-being-successfully-drawn-from-the-deck;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 234318600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user creates a new deck",
+            "match": {
+              "location": "com.deckofcardsapi.step_defenitions.DrawCardsStepDefinition.user_creates_a_new_deck()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 144349400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user calls \"drawCard\" with \"Get\" http request with specific \"52\" of cards in deck",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"drawCard\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Get\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"52\"",
+                  "offset": 60
+                }
+              ],
+              "location": "com.deckofcardsapi.step_defenitions.DrawCardsStepDefinition.user_calls_with_http_request_with_specific_of_cards_in_deck(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 17952300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "remaining number of cards in response body is \"52\" number of cards less",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"52\"",
+                  "offset": 46
+                }
+              ],
+              "location": "com.deckofcardsapi.step_defenitions.DrawCardsStepDefinition.remaining_number_of_cards_in_response_body_is_number_of_cards_less(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DrawCards"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-04-08T22:06:30.101Z",
+        "line": 15,
+        "name": "Verify if cards are being successfully drawn from the deck",
+        "description": "",
+        "id": "draw-cards-from-deck;verify-if-cards-are-being-successfully-drawn-from-the-deck;;6",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 176256000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user creates a new deck",
+            "match": {
+              "location": "com.deckofcardsapi.step_defenitions.DrawCardsStepDefinition.user_creates_a_new_deck()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 219415000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user calls \"drawCard\" with \"Get\" http request with specific \"0\" of cards in deck",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"drawCard\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Get\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"0\"",
+                  "offset": 60
+                }
+              ],
+              "location": "com.deckofcardsapi.step_defenitions.DrawCardsStepDefinition.user_calls_with_http_request_with_specific_of_cards_in_deck(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6016600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "remaining number of cards in response body is \"0\" number of cards less",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"0\"",
+                  "offset": 46
+                }
+              ],
+              "location": "com.deckofcardsapi.step_defenitions.DrawCardsStepDefinition.remaining_number_of_cards_in_response_body_is_number_of_cards_less(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DrawCards"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-04-08T22:06:30.504Z",
+        "line": 16,
+        "name": "Verify if cards are being successfully drawn from the deck",
+        "description": "",
+        "id": "draw-cards-from-deck;verify-if-cards-are-being-successfully-drawn-from-the-deck;;7",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 285996100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user creates a new deck",
+            "match": {
+              "location": "com.deckofcardsapi.step_defenitions.DrawCardsStepDefinition.user_creates_a_new_deck()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 208128100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user calls \"drawCard\" with \"Get\" http request with specific \"55\" of cards in deck",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"drawCard\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Get\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"55\"",
+                  "offset": 60
+                }
+              ],
+              "location": "com.deckofcardsapi.step_defenitions.DrawCardsStepDefinition.user_calls_with_http_request_with_specific_of_cards_in_deck(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: Expected card count doesn\u0027t match actual expected:\u003c-3\u003e but was:\u003c0\u003e\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\r\n\tat org.junit.Assert.assertEquals(Assert.java:645)\r\n\tat com.deckofcardsapi.step_defenitions.DrawCardsStepDefinition.remaining_number_of_cards_in_response_body_is_number_of_cards_less(DrawCardsStepDefinition.java:49)\r\n\tat ✽.remaining number of cards in response body is \"55\" number of cards less(file:///C:/Users/innoc/IdeaProjects/DeckOfCardsAPIProject/src/test/resources/com/deckofcardsapi/features/draw_cards.feature:7)\r\n",
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "remaining number of cards in response body is \"55\" number of cards less",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"55\"",
+                  "offset": 46
+                }
+              ],
+              "location": "com.deckofcardsapi.step_defenitions.DrawCardsStepDefinition.remaining_number_of_cards_in_response_body_is_number_of_cards_less(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DrawCards"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-04-08T22:06:31.015Z",
+        "line": 17,
+        "name": "Verify if cards are being successfully drawn from the deck",
+        "description": "",
+        "id": "draw-cards-from-deck;verify-if-cards-are-being-successfully-drawn-from-the-deck;;8",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 224949700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user creates a new deck",
+            "match": {
+              "location": "com.deckofcardsapi.step_defenitions.DrawCardsStepDefinition.user_creates_a_new_deck()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 156124100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user calls \"drawCard\" with \"Get\" http request with specific \"-1\" of cards in deck",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"drawCard\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Get\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"-1\"",
+                  "offset": 60
+                }
+              ],
+              "location": "com.deckofcardsapi.step_defenitions.DrawCardsStepDefinition.user_calls_with_http_request_with_specific_of_cards_in_deck(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: Expected card count doesn\u0027t match actual expected:\u003c53\u003e but was:\u003c1\u003e\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\r\n\tat org.junit.Assert.assertEquals(Assert.java:645)\r\n\tat com.deckofcardsapi.step_defenitions.DrawCardsStepDefinition.remaining_number_of_cards_in_response_body_is_number_of_cards_less(DrawCardsStepDefinition.java:49)\r\n\tat ✽.remaining number of cards in response body is \"-1\" number of cards less(file:///C:/Users/innoc/IdeaProjects/DeckOfCardsAPIProject/src/test/resources/com/deckofcardsapi/features/draw_cards.feature:7)\r\n",
+              "duration": 8977400,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "remaining number of cards in response body is \"-1\" number of cards less",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"-1\"",
+                  "offset": 46
+                }
+              ],
+              "location": "com.deckofcardsapi.step_defenitions.DrawCardsStepDefinition.remaining_number_of_cards_in_response_body_is_number_of_cards_less(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DrawCards"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-04-08T22:06:31.407Z",
+        "line": 28,
+        "name": "Verify if cards are being successfully drawn from the deck",
+        "description": "",
+        "id": "draw-cards-from-deck;verify-if-cards-are-being-successfully-drawn-from-the-deck;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user wants to execute \"drawing cards from new deck\" service",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"drawing cards from new deck\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.deckofcardsapi.step_defenitions.CreateNewDeckStepDef.user_wants_to_execute_service(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 225418600,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user calls \"createNewDeckAndDrawCard\" with \"Get\" http request with specific \"1\" of cards",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"createNewDeckAndDrawCard\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Get\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"1\"",
+                  "offset": 76
+                }
+              ],
+              "location": "com.deckofcardsapi.step_defenitions.DrawCardsStepDefinition.user_calls_with_http_request_with_specific_of_cards(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6981100,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "remaining number of cards in response body is \"1\" number of cards less",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 46
+                }
+              ],
+              "location": "com.deckofcardsapi.step_defenitions.DrawCardsStepDefinition.remaining_number_of_cards_in_response_body_is_number_of_cards_less(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DrawCardsNewDeck"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-04-08T22:06:31.644Z",
+        "line": 29,
+        "name": "Verify if cards are being successfully drawn from the deck",
+        "description": "",
+        "id": "draw-cards-from-deck;verify-if-cards-are-being-successfully-drawn-from-the-deck;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user wants to execute \"drawing cards from new deck\" service",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"drawing cards from new deck\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.deckofcardsapi.step_defenitions.CreateNewDeckStepDef.user_wants_to_execute_service(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 152526600,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user calls \"createNewDeckAndDrawCard\" with \"Get\" http request with specific \"2\" of cards",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"createNewDeckAndDrawCard\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Get\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"2\"",
+                  "offset": 76
+                }
+              ],
+              "location": "com.deckofcardsapi.step_defenitions.DrawCardsStepDefinition.user_calls_with_http_request_with_specific_of_cards(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "remaining number of cards in response body is \"2\" number of cards less",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2\"",
+                  "offset": 46
+                }
+              ],
+              "location": "com.deckofcardsapi.step_defenitions.DrawCardsStepDefinition.remaining_number_of_cards_in_response_body_is_number_of_cards_less(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DrawCardsNewDeck"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-04-08T22:06:31.798Z",
+        "line": 30,
+        "name": "Verify if cards are being successfully drawn from the deck",
+        "description": "",
+        "id": "draw-cards-from-deck;verify-if-cards-are-being-successfully-drawn-from-the-deck;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user wants to execute \"drawing cards from new deck\" service",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"drawing cards from new deck\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.deckofcardsapi.step_defenitions.CreateNewDeckStepDef.user_wants_to_execute_service(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 234324000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user calls \"createNewDeckAndDrawCard\" with \"Get\" http request with specific \"10\" of cards",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"createNewDeckAndDrawCard\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Get\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"10\"",
+                  "offset": 76
+                }
+              ],
+              "location": "com.deckofcardsapi.step_defenitions.DrawCardsStepDefinition.user_calls_with_http_request_with_specific_of_cards(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "remaining number of cards in response body is \"10\" number of cards less",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10\"",
+                  "offset": 46
+                }
+              ],
+              "location": "com.deckofcardsapi.step_defenitions.DrawCardsStepDefinition.remaining_number_of_cards_in_response_body_is_number_of_cards_less(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DrawCardsNewDeck"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-04-08T22:06:32.032Z",
+        "line": 31,
+        "name": "Verify if cards are being successfully drawn from the deck",
+        "description": "",
+        "id": "draw-cards-from-deck;verify-if-cards-are-being-successfully-drawn-from-the-deck;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user wants to execute \"drawing cards from new deck\" service",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"drawing cards from new deck\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.deckofcardsapi.step_defenitions.CreateNewDeckStepDef.user_wants_to_execute_service(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 209277000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user calls \"createNewDeckAndDrawCard\" with \"Get\" http request with specific \"52\" of cards",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"createNewDeckAndDrawCard\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Get\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"52\"",
+                  "offset": 76
+                }
+              ],
+              "location": "com.deckofcardsapi.step_defenitions.DrawCardsStepDefinition.user_calls_with_http_request_with_specific_of_cards(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6983000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "remaining number of cards in response body is \"52\" number of cards less",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"52\"",
+                  "offset": 46
+                }
+              ],
+              "location": "com.deckofcardsapi.step_defenitions.DrawCardsStepDefinition.remaining_number_of_cards_in_response_body_is_number_of_cards_less(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DrawCardsNewDeck"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-04-08T22:06:32.249Z",
+        "line": 32,
+        "name": "Verify if cards are being successfully drawn from the deck",
+        "description": "",
+        "id": "draw-cards-from-deck;verify-if-cards-are-being-successfully-drawn-from-the-deck;;6",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user wants to execute \"drawing cards from new deck\" service",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"drawing cards from new deck\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.deckofcardsapi.step_defenitions.CreateNewDeckStepDef.user_wants_to_execute_service(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 168850000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user calls \"createNewDeckAndDrawCard\" with \"Get\" http request with specific \"0\" of cards",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"createNewDeckAndDrawCard\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Get\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"0\"",
+                  "offset": 76
+                }
+              ],
+              "location": "com.deckofcardsapi.step_defenitions.DrawCardsStepDefinition.user_calls_with_http_request_with_specific_of_cards(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7943400,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "remaining number of cards in response body is \"0\" number of cards less",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"0\"",
+                  "offset": 46
+                }
+              ],
+              "location": "com.deckofcardsapi.step_defenitions.DrawCardsStepDefinition.remaining_number_of_cards_in_response_body_is_number_of_cards_less(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DrawCardsNewDeck"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-04-08T22:06:32.431Z",
+        "line": 33,
+        "name": "Verify if cards are being successfully drawn from the deck",
+        "description": "",
+        "id": "draw-cards-from-deck;verify-if-cards-are-being-successfully-drawn-from-the-deck;;7",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3030200,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user wants to execute \"drawing cards from new deck\" service",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"drawing cards from new deck\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.deckofcardsapi.step_defenitions.CreateNewDeckStepDef.user_wants_to_execute_service(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 229972100,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user calls \"createNewDeckAndDrawCard\" with \"Get\" http request with specific \"55\" of cards",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"createNewDeckAndDrawCard\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Get\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"55\"",
+                  "offset": 76
+                }
+              ],
+              "location": "com.deckofcardsapi.step_defenitions.DrawCardsStepDefinition.user_calls_with_http_request_with_specific_of_cards(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: Expected card count doesn\u0027t match actual expected:\u003c-3\u003e but was:\u003c0\u003e\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\r\n\tat org.junit.Assert.assertEquals(Assert.java:645)\r\n\tat com.deckofcardsapi.step_defenitions.DrawCardsStepDefinition.remaining_number_of_cards_in_response_body_is_number_of_cards_less(DrawCardsStepDefinition.java:49)\r\n\tat ✽.remaining number of cards in response body is \"55\" number of cards less(file:///C:/Users/innoc/IdeaProjects/DeckOfCardsAPIProject/src/test/resources/com/deckofcardsapi/features/draw_cards.feature:23)\r\n",
+              "duration": 7017200,
+              "status": "failed"
+            },
+            "line": 23,
+            "name": "remaining number of cards in response body is \"55\" number of cards less",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"55\"",
+                  "offset": 46
+                }
+              ],
+              "location": "com.deckofcardsapi.step_defenitions.DrawCardsStepDefinition.remaining_number_of_cards_in_response_body_is_number_of_cards_less(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DrawCardsNewDeck"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-04-08T22:06:32.672Z",
+        "line": 34,
+        "name": "Verify if cards are being successfully drawn from the deck",
+        "description": "",
+        "id": "draw-cards-from-deck;verify-if-cards-are-being-successfully-drawn-from-the-deck;;8",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user wants to execute \"drawing cards from new deck\" service",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"drawing cards from new deck\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.deckofcardsapi.step_defenitions.CreateNewDeckStepDef.user_wants_to_execute_service(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 250248300,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user calls \"createNewDeckAndDrawCard\" with \"Get\" http request with specific \"-1\" of cards",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"createNewDeckAndDrawCard\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Get\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"-1\"",
+                  "offset": 76
+                }
+              ],
+              "location": "com.deckofcardsapi.step_defenitions.DrawCardsStepDefinition.user_calls_with_http_request_with_specific_of_cards(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: Expected card count doesn\u0027t match actual expected:\u003c53\u003e but was:\u003c1\u003e\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\r\n\tat org.junit.Assert.assertEquals(Assert.java:645)\r\n\tat com.deckofcardsapi.step_defenitions.DrawCardsStepDefinition.remaining_number_of_cards_in_response_body_is_number_of_cards_less(DrawCardsStepDefinition.java:49)\r\n\tat ✽.remaining number of cards in response body is \"-1\" number of cards less(file:///C:/Users/innoc/IdeaProjects/DeckOfCardsAPIProject/src/test/resources/com/deckofcardsapi/features/draw_cards.feature:23)\r\n",
+              "duration": 15656700,
+              "status": "failed"
+            },
+            "line": 23,
+            "name": "remaining number of cards in response body is \"-1\" number of cards less",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"-1\"",
+                  "offset": 46
+                }
+              ],
+              "location": "com.deckofcardsapi.step_defenitions.DrawCardsStepDefinition.remaining_number_of_cards_in_response_body_is_number_of_cards_less(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DrawCardsNewDeck"
+          }
+        ]
       }
-    ]
+    ],
+    "name": "Draw cards from deck",
+    "description": "",
+    "id": "draw-cards-from-deck",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/com/deckofcardsapi/features/draw_cards.feature",
+    "tags": []
   }
 ]

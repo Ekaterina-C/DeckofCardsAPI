@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/com/deckofcardsapi/features/",
         glue = "com/deckofcardsapi/step_defenitions",
         dryRun = false,
-        tags = "@wip",
+      //  tags = "@wip",
         plugin = {"html:target/default-cucumber-reports",
                 "json:target/cucumber.json",
                 "rerun:target/rerun.txt"}
